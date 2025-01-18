@@ -1,0 +1,15 @@
+Intel 2022.3 is now loaded
+Loading compiler version 2022.2.1
+Loading tbb version 2021.7.1
+Loading compiler-rt version 2022.2.1
+Loading oclfpga version 2022.2.1
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+Intel 2022.3 is now loaded
+Loading mkl version 2022.2.1
+Loading module for MPICH
+MPICH 4.0.3 and INTEL 2022.3 are now loaded
+
+Loading mpich/4.0.3/intel2022.3
+  Loading requirement: oneapi/.2022.3 tbb/latest compiler-rt/latest
+    oclfpga/latest compiler/latest intel/2022.3 mkl/latest
