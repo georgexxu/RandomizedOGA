@@ -13,3 +13,17 @@ neuron num 		 error 		 order 		 h10 error \ order
 256 		 0.00020534384112926658 		 2.066843031601634 		 0.010989739934060477 		 1.6481265449198363 
 512 		 5.364270543079358e-05 		 1.9365877717993967 		 0.0037233265280889453 		 1.5614931978921545 
 
+Integration points: Nx 25, order 3 
+Integration points: Nx 25, order 3 
+dictionary size: 512
+neuron num 		 error 		 order 		 h10 error \ order 
+4 		 0.3451943647393641 		 * 		 3.2043791515256244 		 * 
+
+dictionary size: 512
+neuron num 		 error 		 order 		 h10 error \ order 
+4 		 0.32365173067570213 		 * 		 3.078595236641557 		 * 
+
+dictionary size: 512
+neuron num 		 error 		 order 		 h10 error \ order 
+4 		 0.34498813664826705 		 * 		 3.2579667745306953 		 * 
+
