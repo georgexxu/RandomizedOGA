@@ -270,7 +270,6 @@ def MonteCarlo_Sobol_dDim_weights_points(M ,d = 4):
     integration_points = integration_points.to(device)
     weights = torch.ones(M,1).to(device)/M 
     return weights, integration_points 
-
 def Neumann_boundary_quadrature_points_weights(M,d):
     def generate_quadpts_on_boundary(gw_expand_bd, integration_points_bd,d):
         size_pts_bd = integration_points_bd.size(0) 
@@ -295,14 +294,15 @@ def Neumann_boundary_quadrature_points_weights(M,d):
         print('dim',d)
         gw_expand_bd, integration_points_bd = PiecewiseGQ1D_weights_points(0,1,8192, order = 3) 
     elif d == 3: 
-        gw_expand_bd, integration_points_bd = PiecewiseGQ2D_weights_points(100, order = 3) 
+        gw_expand_bd, integration_points_bd = PiecewiseGQ2D_weights_points(200, order = 3) 
     elif d == 4: 
         gw_expand_bd, integration_points_bd = PiecewiseGQ3D_weights_points(25, order = 3) 
         print('dim',d)
     else: 
-        gw_expand_bd, integration_points_bd = MonteCarlo_Sobol_dDim_weights_points(M ,d = d)
+        gw_expand_bd, integration_points_bd = MonteCarlo_Sobol_dDim_weights_points(M ,d = d-1)
         print('dim >=5 ')
-    gw_expand_bd_faces, integration_points_bd_faces = generate_quadpts_on_boundary(gw_expand_bd, integration_points_bd,d)
+    if d != 1: 
+        gw_expand_bd_faces, integration_points_bd_faces = generate_quadpts_on_boundary(gw_expand_bd, integration_points_bd,d)
     return gw_expand_bd_faces.to(device), integration_points_bd_faces.to(device) 
 
 def generate_relu_dict3D(N_list):

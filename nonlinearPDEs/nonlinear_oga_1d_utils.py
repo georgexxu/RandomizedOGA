@@ -244,12 +244,11 @@ def Neumann_boundary_quadrature_points_weights(M,d):
         gw_expand_bd, integration_points_bd = PiecewiseGQ3D_weights_points(25, order = 3) 
         print('dim',d)
     else: 
-        gw_expand_bd, integration_points_bd = MonteCarlo_Sobol_dDim_weights_points(M ,d = d)
+        gw_expand_bd, integration_points_bd = MonteCarlo_Sobol_dDim_weights_points(M ,d = d-1)
         print('dim >=5 ')
     if d != 1: 
         gw_expand_bd_faces, integration_points_bd_faces = generate_quadpts_on_boundary(gw_expand_bd, integration_points_bd,d)
     return gw_expand_bd_faces.to(device), integration_points_bd_faces.to(device) 
-
 
 def plot_solution_modified(r1,r2,model,x_test,u_true,name=None): 
     # Plot function: test results 
