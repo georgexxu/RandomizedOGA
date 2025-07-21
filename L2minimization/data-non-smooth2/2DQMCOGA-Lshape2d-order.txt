@@ -1,0 +1,12 @@
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
+RELU k = 1, Integration points: Nx 100, order 3 
+RELU k = 2, Integration points: Nx 100, order 3 
